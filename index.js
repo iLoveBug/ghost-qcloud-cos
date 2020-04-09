@@ -56,7 +56,7 @@ class QCloudCustomAdapter extends BaseAdapter {
         } else {
           let url = this.baseUrl
             ? data.Location.replace(/.*\.com\//, this.baseUrl)
-            : '//' + data.Location
+            : 'https://' + data.Location
 
           resolve(url)
         }
